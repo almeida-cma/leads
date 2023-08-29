@@ -1,0 +1,43 @@
+<!-- A fusão entre index.html1 e index.html2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+</head>
+<body>
+    <div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Nome de Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button type="submit">Entrar</button>
+        </form>
+        <br>
+        <h2>Registro</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Nome de Usuário">
+            <input type="password" id="registerPassword" placeholder="Senha">
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <h1>Sistema de Cadastro</h1>
+    <form action="http://localhost:3000/dados" method="POST">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+		<label for="celular">Celular:</label><br>
+        <input type="text" id="celular" name="celular"><br>
+		<input type="checkbox" id="lgpd" name="lgpd" required>
+        <label for="lgpd">Aceito os termos de uso e política de privacidade</label>
+        <input type="submit" value="ENVIAR">
+    </form>
+
+    <script src="api.js"></script>
+</body>
+</html>

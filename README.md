@@ -11,6 +11,6 @@ Baixar em pasta e executar os seguintes comandos com NODE.JS instalado via: http
 1) Iniciar projeto (Única vez):
     npm init -y
 2) Baixar complementos NPM (Única vez):
-    npm install express body-parser sqlite3 bcryptjs express-session
+    npm install express body-parser sqlite3 bcryptjs express-session path
 3) Iniciar serviço na porta 3000 para subir aplicação (sempre que for rodar a aplicação):
     node server.js
